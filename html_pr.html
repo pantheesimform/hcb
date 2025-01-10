@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ? if we can write directly without using 'p' then why to use it .... and many similar questions on html -->
+<!-- ? if we have min max then why we have low high in meter tag -->
+
+<!-- Defines a container for a web page's metadata. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+    <title>HTML tags ONLY</title>
+</head>
+
+<!-- The container for a web page's content. must be an ancestor of all HTML elements (except where noted) -->
+
+<body>
+    <base href="https://htmlreference.io">
+    <!-- rel can have many different values like licence, help, alternate, author,... use to show relation between new link and original page -->
+    <a href="/element/a/" target="_blank" rel="author">a tag</a>
+    <!-- just like tooltip and dotted underline -->
+    <abbr title="abbreiviation">this is abbr tag</abbr>
+    <!-- used to add important information of contact, author,... -->
+    <address>this <br> is my <br> address tag.</address>
+    <!-- this is image of world map -- uncomment below image -->
+    <!-- <img src="/images/world-continents.png" width="320" height="160" orgwidth="320" orgheight="160" usemap="#world-continents"> -->
+    <map name="world-continents">
+        <!-- on click of this coords in image it will redirect to href link -->
+        <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly"
+            coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">
+    </map>
+    <!-- TODO: test this tag -->
+    <!-- <area shape="cicle" coords="10,150,50" href="" alt="this is rect" style="border: 1px black dashed;"> -->
+    <!-- Defines a self-contained block of content that can exist in any context. It can have its own header, footer, sections... Useful for a list of blog posts. -->
+    <article>article tag</article>
+    <!-- Defines a block of content that is related to the main content. Displayed as a sidebar usually. -->
+    <aside>aside for sidebars.</aside>
+    <!-- one other attribute is muted(without value) -->
+    <!-- !this is not working -->
+    <!-- <audio src="assets/white_petals.mp3" volume="0" autoplay controls loop preload></audio> -->
+    <!-- <audio controls>
+        <source src="assets/white_petals.mp3" type="audio/mpeg">
+    </audio> -->
+    <b>bold tag</b>
+    <p>this is <bdi>bdi tag</bdi></p>
+    <p>this is <bdo dir="rtl">bdi tag</bdo></p>
+    <!-- Defines a long quotation. -->
+    <!-- TODO: why to use cite in this. -->
+    <blockquote cite="https://en.wikiquote.org/wiki/Marie_Curie">
+        Be less curious about people and more curious about ideas.
+    </blockquote>
+    <!-- another attribute of btn is disabled -->
+    <button type="submit" name="name of btn" value="primary" autofocus>btn here</button>
+    <b>this is canvas tag.</b> <br>
+    <canvas height="50" width="200" style="border: 2px black dashed;">
+        Fallback text for non-supported browsers
+    </canvas>
+    <br>
+    <caption>this is caption, to be used within table tag.</caption>
+    <br>
+    cite tag : <cite> Defines the source of a creative work.</cite>
+    Type <code>npm install</code> in your terminal to install a project's dependencies.
+    <!-- ! Defines content linked to machine-readable output. -->
+    <!-- used in lists (in reference material) https://htmlreference.io/element/data/ -->
+    <ul>
+        <li data="20">item1</li>
+    </ul>
+    <!-- Defines a list of autocomplete options when using a text <input>. -->
+    <!-- do not add anything inbetween option tag-->
+    <!-- <input list="countries" placeholder="Type a country">
+    <datalist id="countries">
+        <option value="Argentina"></option>
+        <option value="Bolivia"></option>
+        <option value="Brazil"></option>
+    </datalist> -->
+
+    <!-- dl-definition list, dt-definition term, dd-definition item😂 -->
+    <dl>
+        <dt>Web</dt>
+        <dd>The part of the Internet that contains websites and web pages</dd>
+    </dl>
+
+    <!-- !can not understand the meaning of attributes. -->
+    del tag: <del cite="cite=https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym"
+        datettime="2017-10-14T12:00:00.001-04:00">Defines text that has been deleted. </del>
+
+    <!-- for every value of open it will be seen open only. -->
+    <details>
+        <summary>details tag</summary>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</p>
+    </details>
+
+    Defines where a term is <dfn>defined</dfn> within a web page.
+
+    <!-- open - opens it by default -->
+    <dialog open>
+        This is a dialog box!
+    </dialog>
+
+    <!-- Defines a generic block of content, that does not carry any semantic value. Used for layout elements like containers. -->
+    <div>div tag</div>
+
+    <!-- this is relative link, so it is redirecting to subscribe page of base URL -->
+    <form action="/subscribe" method="post">
+        <!-- generate line around form, have one attribute 'disabled' -->
+        <!-- <fieldset>
+            <legend>Subscribe to the Newsletter</legend>
+            <input type="email" name="email">
+            <button>Ok</button>
+        </fieldset> -->
+    </form>
+
+    em tag Defines <em>emphasis</em> on text. Is usually rendered as italic text.
+
+    <!-- Defines a container for external application. -->
+    <br>
+    <!-- <embed src="https://www.youtube.com/embed/kmk43_2dtn0" type="mp4" width="200" height="100">
+
+    <figure>
+        <img src="assets/html_logo.png" alt="html logo">
+        <figcaption>html logo figcaption.</figcaption>
+    </figure> -->
+
+    <!-- form - Defines an interactive form with controls. -->
+    <!-- https://htmlreference.io/element/form/ -->
+
+    <!-- header - Defines the header of a web page or section. -->
+    <!-- hgroup - Defines the heading of a section. It can only contain heading levels : h1 to h6 -->
+
+    <hr>
+    <i>italic</i>
+
+    <!-- https://htmlreference.io/element/iframe/ (refer from here) -->
+    <!-- <iframe src="https://cssreference.io" allowfullscreen>
+        Fallback text for non-supported browsers
+    </iframe> -->
+
+    <!-- ! ins - Defines text that has been inserted. https://htmlreference.io/element/ins/ -->
+    <ins> ins </ins> tag
+
+    <!-- ! Defines a snippet of user input. -->
+    To save, press <kbd>Ctrl + S</kbd>.
+    We use HTML5 to write <mark>content</mark> on the Web.
+
+    <!-- meta - https://htmlreference.io/element/meta/ -->
+
+    <!-- ! object tag, param tag -->
+
+
+
+
+    <footer>
+        HTML Reference - A free reference to all HTML5 elements and attributes
+    </footer>
+</body>
+
+</html>
