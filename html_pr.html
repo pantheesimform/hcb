@@ -10,14 +10,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="15">
     <title>HTML tags ONLY</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- for favicon we should save file as favicon.ico, also should have different files for sizes like 16,32 -->
+    <link rel="icon" href="assets/flipkart.png">
 </head>
 
 <!-- The container for a web page's content. must be an ancestor of all HTML elements (except where noted) -->
 
 <body>
-    <base href="https://htmlreference.io">
+    <!-- <base href="https://htmlreference.io"> -->
+    <!--this is causing many errors, due to which other files like audio and video not showing-->
     <!-- rel can have many different values like licence, help, alternate, author,... use to show relation between new link and original page -->
     <a href="/element/a/" target="_blank" rel="author">a tag</a>
     <!-- just like tooltip and dotted underline -->
@@ -38,11 +39,20 @@
     <!-- Defines a block of content that is related to the main content. Displayed as a sidebar usually. -->
     <aside>aside for sidebars.</aside>
     <!-- one other attribute is muted(without value) -->
-    <!-- !this is not working -->
-    <!-- <audio src="assets/white_petals.mp3" volume="0" autoplay controls loop preload></audio> -->
+    <audio src="assets/white_petals.mp3" volume="0" autoplay muted controls loop preload></audio>
     <!-- <audio controls>
         <source src="assets/white_petals.mp3" type="audio/mpeg">
     </audio> -->
+    <!-- for yt video -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bu31giq-ISA?si=IjCWysmGpzOYY4VM"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <video width="320" height="240" controls autoplay muted loop>
+        <source src="assets/nimo.mp4" type="video/mp4">
+        <source src="assets/nimo.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
     <b>bold tag</b>
     <p>this is <bdi>bdi tag</bdi></p>
     <p>this is <bdo dir="rtl">bdi tag</bdo></p>

@@ -23,3 +23,23 @@ It defines the structure and content of web documents using tags and attributes 
 
 ** Images and Favicon (favourite icon) **
 favicon --> file format - ICO(icon), PNG
+
+** Tables and Lists **
+
+** Block and Inline Elements **
+
+** HTML Layout Elements **
+
+** Responsiveness **
+
+** HTML Semantics **
+
+** Entities and Symbols **
+
+** HTML Forms **
+
+** HTML Graphics **
+
+** HTML Media **
+
+** Cross Browser HTML **
