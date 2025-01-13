@@ -1,0 +1,25 @@
+HTML code was never actually compiled or interpreted.
+
+** What is HTML? **
+html(hyper text markup language) is used to create and structure web pages.
+It defines the structure and content of web documents using tags and attributes to build and format interactive elements.
+
+** Structure of HTML Page **
+<!DOCTYPE html> --> our document acts appropriately
+<html lang="en"> --> root ele, lan is for doc's default language
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> --> ensuring that the page renders at the viewport width
+    <title>Document</title> --> title of page, shown in the browser tab where the page is loaded, bookmark, favourite a page, it can also describe the page.
+</head>
+<body> --> include all materials wish to display to website visitors when they visit your page.
+    content here
+</body>
+</html>
+
+** Elements and Attributes **
+
+** Styling and Formatting **
+
+** Images and Favicon (favourite icon) **
+favicon --> file format - ICO(icon), PNG
