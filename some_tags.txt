@@ -1,0 +1,33 @@
+<cite>- mark up the title of a cited creative work(a book, poem, movie, website,... name to show in italic)
+<data>- links a given piece of content with a machine-readable translation. (if want to show str to use and id/code to server/machine)
+<embed>- embeds external content at the specified point in the document
+<figure>- self-contained content, potentially with an optional caption
+<frame>- area in which another HTML document can be displayed. used within a <frameset>. 
+            not encouraged because of certain disadvantages such as performance problems and lack of accessibility for users with screen readers.
+            Instead use <iframe> may be preferred.
+<hgroup>- heading and related content. It groups a single <h1>–<h6> element with one or more <p>
+<iframe>- nested browsing context, embedding another HTML page into the current one.
+<ins>- used with del(cacelled txt) to show newly added txt(underlined txt)
+<link>- relationships between the current document and an external resource
+<marquee>(dep)- scrolling text
+<menu>- semantic alternative for <ul>
+<nobr>(dep)- to have all para in one line 
+<noembed> or <noframes>(both dep)- to show content when browser does not support res tags.
+<noscript>- section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
+<object>- external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. <param>(dep) ?
+<picture>- 0/0+ <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios. grouping
+<plaintext> is dep of <pre>- preformatted text which is to be presented exactly as written in the HTML file
+<portal> ?
+<q>- enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks.
+        This element is intended for short quotations that don't require paragraph breaks; for long <blockquote>
+<rp> <rt> <ruby> ?
+<samp>- sample/quoted output from a computer program. Its contents are typically rendered using the browser's default monospaced font (Courier/Lucida Console).
+<search> ?
+<slot> ?
+<template>- mechanism for holding HTML fragments, which can either be used later via JavaScript or generated immediately into shadow DOM ?
+<track>- child of the media elements, <audio> and <video>. Each track element lets you specify a timed text track (or time-based data) that can be displayed in parallel with the media element, for example to overlay subtitles or closed captions on top of a video or alongside audio tracks. ?
+<wbr> ?
+
+
+details and summary like accordian
+dd, dt, dl are like definition/description

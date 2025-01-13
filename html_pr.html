@@ -2,6 +2,7 @@
 <html lang="en">
 <!-- ? if we can write directly without using 'p' then why to use it .... and many similar questions on html -->
 <!-- ? if we have min max then why we have low high in meter tag -->
+<!-- ? what is the use of output tag -->
 
 <!-- Defines a container for a web page's metadata. -->
 
@@ -17,6 +18,51 @@
 <!-- The container for a web page's content. must be an ancestor of all HTML elements (except where noted) -->
 
 <body>
+    <code>panthee</code> <kbd>panthee</kbd>
+    <marquee behavior="" direction="rtl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum iste placeat
+        doloribus sint natus tempora. At facilis, expedita unde perspiciatis, inventore vero autem aliquam quis nisi
+        ipsa numquam molestiae saepe.</marquee>
+    <!-- <nobr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut eligendi numquam totam non reprehenderit
+        corrupti voluptates blanditiis exercitationem accusantium. Reiciendis, cupiditate iure voluptate tenetur eius
+        aspernatur beatae non amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut eligendi numquam totam non reprehenderit
+        corrupti voluptates blanditiis exercitationem accusantium. Reiciendis, cupiditate iure voluptate tenetur eius
+        aspernatur beatae non amet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ut eligendi numquam totam non reprehenderit
+        corrupti voluptates blanditiis exercitationem accusantium. Reiciendis, cupiditate iure voluptate tenetur eius
+        aspernatur beatae non amet.</nobr> -->
+    <table>
+        <caption>this is caption of this table</caption>
+        <!-- for th, col: It specifies that the header cell is used for column. -->
+        <thead>
+            <tr>
+                <th scope="col">this is thead</th>
+            </tr>
+        </thead>
+        <tbody>
+            <colgroup>
+                <col span="2" style="background-color:red">
+                <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+                <td>1</td>
+                <td>Panthee</td>
+                <td>dotnet trainee</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Dharvi</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Himanshi</td>
+                <td>dotnet trainee</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>this is tfoot</td>
+            </tr>
+        </tfoot>
+    </table>
     <!-- <base href="https://htmlreference.io"> -->
     <!--this is causing many errors, due to which other files like audio and video not showing-->
     <!-- rel can have many different values like licence, help, alternate, author,... use to show relation between new link and original page -->
@@ -56,6 +102,9 @@
     <b>bold tag</b>
     <p>this is <bdi>bdi tag</bdi></p>
     <p>this is <bdo dir="rtl">bdi tag</bdo></p>
+    <bdi>pqr - 1st place</bdi>
+    <br>
+    <bdo dir="rtl">pqr - 1st place</bdo>
     <!-- Defines a long quotation. -->
     <!-- TODO: why to use cite in this. -->
     <blockquote cite="https://en.wikiquote.org/wiki/Marie_Curie">
@@ -72,7 +121,7 @@
     <br>
     cite tag : <cite> Defines the source of a creative work.</cite>
     Type <code>npm install</code> in your terminal to install a project's dependencies.
-    <!-- ! Defines content linked to machine-readable output. -->
+    <!-- Defines content linked to machine-readable output. -->
     <!-- used in lists (in reference material) https://htmlreference.io/element/data/ -->
     <ul>
         <li data="20">item1</li>
@@ -147,7 +196,7 @@
         Fallback text for non-supported browsers
     </iframe> -->
 
-    <!-- ! ins - Defines text that has been inserted. https://htmlreference.io/element/ins/ -->
+    <!-- ins - Defines text that has been recently inserted. https://htmlreference.io/element/ins/ -->
     <ins> ins </ins> tag
 
     <!-- ! Defines a snippet of user input. -->

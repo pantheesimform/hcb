@@ -1,4 +1,5 @@
 HTML code was never actually compiled or interpreted.
+https://www.w3schools.com/html/html_urlencode.asp
 
 ** What is HTML? **
 html(hyper text markup language) is used to create and structure web pages.
@@ -21,25 +22,74 @@ It defines the structure and content of web documents using tags and attributes 
 
 ** Styling and Formatting **
 
+** Block and Inline Elements **
+
+** HTML Semantics **
+
 ** Images and Favicon (favourite icon) **
 favicon --> file format - ICO(icon), PNG
 
 ** Tables and Lists **
-
-** Block and Inline Elements **
+<th> used to give header in the cell of a table, col header whereas <thead> used to give the header of a group of a table, table header.
+<thead> grp of header rows. So you have more possibilities for scripting and formatting. authors give browsers the ability to include the header rows on each page of a printed, multi-page table, as well as the ability to present a long table with a scrolling body and static header rows
+<col>, <colgroup> useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+<colgroup> tag specifies a group of one or more columns in a table for formatting.
 
 ** HTML Layout Elements **
+special semantic elements that are used to define the structure and layout of a web page. 
+useful to arrange (divide) the content into logical sections that improve the readability and accessibility of the webpage for readers.
+<header> - Defines a header for a document or a section, top of webpage
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document, can be multiple sections in a single page
+<article> - Defines an independent, self-contained content such as a forum post, magazine, blog post.
+<aside> - Defines content aside from the content (like a sidebar), related or unrelated, usually for ads.
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
 
 ** Responsiveness **
-
-** HTML Semantics **
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+It sets the width of web pages to match the device’s screen width, ensuring content adapts to different screen sizes.
+Adaptive web design uses multiple fixed layouts for different screen sizes, while responsive web design uses a single flexible layout that adjusts dynamically to the screen size.
 
 ** Entities and Symbols **
+Reserved characters in HTML must be replaced with entities, &lt; --> &#60; || &gt; 
+&nbsp; --> non breaking space(handy when breaking the words might be disruptive, space that will not break into a new line, prevent browsers from truncating spaces in HTML pages)
+&entity_name; &#entity_number;
 
 ** HTML Forms **
+<label> element is useful for screen-reader users, who have difficulty clicking on very small regions
+autocomplete - automatically complete values based on values that the user has entered before.
+enctype - Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+attributes -> accept-charset, action, autocomplete, enctype, method, name, novalidate, rel, target
+elements -> <input>, <label>, <select>, <textarea>, <button>, <fieldset>, <legend>, <datalist>, <output>, <option>, <optgroup>
+datalist's id and input's list attribute must be same. its like search box with suggestions.
 
 ** HTML Graphics **
+SVG(Scalable Vector Graphics) are images created by a markup language that are reusable, simple, high-quality standalone images that can be exported and imported as well.
+inside svg tags we can use other shapes tags like circle, rect, ellipse
 
 ** HTML Media **
+The media attribute specifies what media/device the linked document is optimized for.
+This attribute is used to specify that the target URL is designed for special devices (like iPhone) , speech or print media
+This attribute can accept several values.
 
 ** Cross Browser HTML **
+we should always check cross browser compatibility of our website for better reach, UX and SEO. 
+also there might be possible that some of tags are depricated in some version of browsers, so we can verify and change it.
+
+** 
+Semantic Elements: convey the meaning of the content, improving the document's clarity and structure.
+Layout Elements: control the layout or apply styles without conveying specific content meaning.
+Semantic Tags <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, <time>, <address>, <blockquote>, <cite>, <code>, 
+                <dd>, <dfn>, <dl>, <dt>, <em>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <kbd>, <label>, <legend>, <li>, <menu>, <meter>, <ol>, <output>, <pre>, <progress>, <q>, <rp>, 
+                <rt>, <ruby>, <samp>, <strong>, <table>, <tbody>, <td>, <tfoot>, <th>, <thead>, <tr>, <ul>, <var>, <wbr>
+Non-Semantic Tags <div>, <span>, <b>, <i>, <u>, <abbr>, <acronym>, <big>, <center>, <font>, <s>, <small>, <strike>, <sub>, <sup>, <tt>
+**
+
+1. abbr(underline) and acronym(depricated)(underline) and dfn(italic) -- for tooltip
+2. code, kbd, samp, var
+3. del and s -- to cancel that content
+4. meter tag high low min max optimum
+5. meter and progress
+6. section and div
