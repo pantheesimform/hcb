@@ -121,6 +121,7 @@ data-* attri?
 
 details and summary like accordian
 dd, dt, dl are like definition/description
+datalist like giving suggestions in search box
 
 1. abbr(underline) and acronym(depricated)(underline) and dfn(italic) -- for tooltip
 2. code, kbd, samp, var
