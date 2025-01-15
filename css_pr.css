@@ -33,3 +33,36 @@ li[class$="a"] {
 .box p {
     color: red;
 }
+
+.box {
+    background-color: greenyellow;
+    padding: 10px;
+    border: 5px solid rebeccapurple;
+}
+
+.box1 {
+    background: pink;
+    width: 50%;
+    padding: 20px;
+}
+
+.box2 {
+    background-color: antiquewhite;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.container {
+    width: 80%;
+    background-color: lightgray;
+    margin: 0 auto; /* Center the container */
+    border: 1px solid black;
+}
+
+.box3 {
+    width: 50%;
+    margin: 10% auto; /* Margin of 10% on top and bottom */
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}

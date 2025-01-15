@@ -38,15 +38,42 @@ to apply globally--> p * selects all the nested elements inside the <p> element,
 3. next sibling comb -- tag1 + tag2 (p just next to/adjacent h1 not other p)
 4. Subsequent-sibling combinator -- tag1 ~ tag2 (all p that are coming after h1)
 
+** CSS box-Model
+content, padding, border, margin -- what is outline ?
 
+** CSS value and units **
+absolute units - cm,mm,q,in,pc,pt,px
+relative units :
+em - relative to font size of current/parent ele, if given 'x em' means x times than parent ele
+rem - relative to font size of root ele, 'x rem' means x times than root ele, by default it is 16px
+vh and vw - viewports height and width
+lh and rlh - 1st is relative to self line height while other is relative to root ele
+Percentage 
+number (opacity)
+**color - name, hexadecimal(0-9, a-f, #xxxxxx), rgb(255,255,255/0.x) 0.x is alpha/opacity
+HWB(hue, whiteness, blackness), HSL(hue, saturation, lightness)
+**specifying generated content. the value is quoted to demonstrate that it is a string. "content property"
+** math functions like calc(); min(), max(), clamp(); sin(), cos(), tan() -- rotating angle
 
+** sizing in CSS
+Percentage, min max, viewports
 
+** styling background and border **
+background-color
+background-image -- background-repeat(repeat, no-repeat, repeat-x/y, space, round), background-size(cover, contain), background-position
+background-image(Gradients ?) -- 
+background-attachment (scroll, fixed, local) (how bg is scrolled when content is being scrolled)
+border: size style color, border-radius(rounded)
+
+** Text formatting and fonts **
+font style
+text layout style
 
 Introduction to CSS
 CSS Selectors
-*+ Backgrounds and Borders
-*+ CSS Margins and Padding
-*+ Sizing and the Box Model
+Backgrounds and Borders
+CSS Margins and Padding
+Sizing and the Box Model
 *+ Text Formatting and Fonts
 *+ Styling anchors and lists
 CSS Combinators
@@ -61,6 +88,5 @@ CSS Attr Selectors
 *+ CSS Flex-box
 *+ CSS Grid
 *+ Debugging Styling in the browser
-*+ CSS animation
 
-*+ inherit, unset, revert, revert-layer, initial
+*+ box-sizing : inherit, unset, revert, revert-layer, initial
