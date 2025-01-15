@@ -61,32 +61,66 @@ Percentage, min max, viewports
 ** styling background and border **
 background-color
 background-image -- background-repeat(repeat, no-repeat, repeat-x/y, space, round), background-size(cover, contain), background-position
-background-image(Gradients ?) -- 
 background-attachment (scroll, fixed, local) (how bg is scrolled when content is being scrolled)
 border: size style color, border-radius(rounded)
 
-** Text formatting and fonts **
-font style
-text layout style
+** Text formatting and fonts ** diff bet font and text - https://stackoverflow.com/questions/21075127/font-vs-text-in-css-property-names, https://codesweetly.com/text-vs-font/
+*font style*
+font stack(multiple font families)
+font-style(normal, italic, oblique)
+font-weight(light,normal,bold,extrabold,black,100-900,lighter/bolder - Sets current ele boldness to one step lighter/heavier than its parent ele boldness)
+text-transform(none,upppercase,lowercase,capitalize,full-width ? this is not working)
+text-decoration(none,underline,overline,line-through)(shorthand for text-decoration-line, text-decoration-style, and text-decoration-color)
+text-shadows(horizontal offset,vertical offset,blur radius,color)(can have multiple text shadows)
+font-variant(shorthand property allows you to set all the font variants for a font)
+font-stretch(font-width -- not supported yet)(selects a normal, condensed, or expanded face from a font)
+text-rendering?
+*text layout style*
+text-align(left,right,center,justify)
+line-height, word-spacing, letter-spacing
+text-indent(how much horizontal space should be left before the beginning of the first line of the text content)
+text-overflow(clip,ellipsis)(we have to make that text to be overflowed, for that have to use overflow:hidden, text-wrap:no-wrap)
+white-space(whitespace and associated line breaks inside the element are handled)
+word-break(whether line breaks appear wherever the text would otherwise overflow its content box)
+hyphens(how words should be hyphenated when text wraps across multiple lines)
+line-break(Relax or strengthen line breaking for Asian languages)
+
+** CSS Gradients and shadows**
+background-image: linear-gradient(to direction/angle,color1,color2,...),repeating-linear-gradient(),
+background-image: radial-gradient(shape size at position, color1, ...);
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...); repeating-conic-gradient();
+text-shadow: as previously mentioned (https://www.w3schools.com/css/css3_shadows.asp)
+box-shadow: https://www.w3schools.com/css/css3_shadows_box.asp
+
+** styling lists **
+list-style-type (number,letter,roman,...)
+list-style-position (inside/outside)
+list-style-image (url,...)
+** styling anchors/links **
+:link(blue)
+:visited(purple)
+:hover(hand icon)
+:focus(on press of tab key, shows border)
+:active(red, click event)
+to style change properties like color, cursor, outline
+
 
 Introduction to CSS
 CSS Selectors
 Backgrounds and Borders
 CSS Margins and Padding
 Sizing and the Box Model
-*+ Text Formatting and Fonts
-*+ Styling anchors and lists
+Text Formatting and Fonts
+Styling anchors and lists
 CSS Combinators
-*+ Pseudo-class and Pseudo-element
 CSS Attr Selectors
+Gradients and Shadows
 
+*+ Pseudo-class and Pseudo-element
 *+ CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align)
 *+ CSS Forms
 *+ CSS Box Sizing
-*+ Gradients and Shadows
 *+ CSS Media Queries
 *+ CSS Flex-box
 *+ CSS Grid
 *+ Debugging Styling in the browser
-
-*+ box-sizing : inherit, unset, revert, revert-layer, initial
