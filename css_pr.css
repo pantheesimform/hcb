@@ -1,0 +1,35 @@
+* {
+    font-family: sans-serif;
+}
+
+li[class] {
+    font-size: 120%;
+}
+
+li[class="a"] {
+    background-color: yellow;
+}
+
+li[class~="a"] {
+    color: red;
+}
+
+li[class|="a"] {
+    color: pink;
+}
+
+li[class^="a"] {
+    font-size: 150%;
+}
+
+li[class$="a"] {
+    background-color: yellow;
+}
+
+/* li[class*="a"] {
+    color: greenyellow;
+} */
+
+.box p {
+    color: red;
+}

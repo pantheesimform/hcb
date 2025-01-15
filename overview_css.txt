@@ -1,0 +1,66 @@
+CSS (cascading style sheets) is stylesheet language
+
+** CSS selectors **
+basic selectors - id, class, ele type
+IDs are unique per document only to select one specific element. Multiple ids results in invalid code, and will cause strange behavior in many places.
+multiple classes per element, to layer on styles as required.
+tell browser which HTML elements should be selected for CSS property values inside the rule applied to them, element(s) selected by the selector are subject of the selector.
+if selector is syntactically invalid, the whole rule will be ignored.
+article :first-child 1st child of article whereas article:first-child select any <article> element that is the 1st child of another element.
+    To avoid this confusion, we can add the universal selector like article *:first-child
+** selector type
+1. type/tag/element selector
+2. class selector (case-sensitive) (@)
+3. id selector (#)
+4. universal selector (*)
+class for specific tag --> span.highlight different from h1.highlight
+2+ class in tag --> .class1.class2 -- will apply to only those elements who have both(any tag)
+id for specific tag --> span#highlight
+more selector for common styling code --> h1, .class1, .class2, #id1,...
+to apply globally--> p * selects all the nested elements inside the <p> element, * to apply whole doc/page same style
+** attr selectors
+1. attribute presence and value selector -- selector_attr.jpeg
+2. substr matching selector -- selector_substr.jpeg
+** selector structure
+1. simple selector --> #id1
+2. compound selector --> tag1#id1 (type and universal selecor must come first)
+3. complex selector --> tag1#id1>.class1
+4. selector list --> , sep list of selectors
+5. relative selector --> accepted within certain contexts, such as the :has() pseudo-class. (can't be used in selector list)
+
+** nesting in css **
+1. tag1{& tag2{}} is tag1 tag2{} (& nesting selector is not required, but adding it helps to explicitly show that CSS nesting is being used.)
+1. tag1{~ tag2{}} is tag1 ~tag2{}
+
+** combinators **
+1. decendant comb -- .box p --> selects p tag with parent tag having class box
+2. child comb -- tag1>tag2 --> direct child (h1 inside div)
+3. next sibling comb -- tag1 + tag2 (p just next to/adjacent h1 not other p)
+4. Subsequent-sibling combinator -- tag1 ~ tag2 (all p that are coming after h1)
+
+
+
+
+
+Introduction to CSS
+CSS Selectors
+*+ Backgrounds and Borders
+*+ CSS Margins and Padding
+*+ Sizing and the Box Model
+*+ Text Formatting and Fonts
+*+ Styling anchors and lists
+CSS Combinators
+*+ Pseudo-class and Pseudo-element
+CSS Attr Selectors
+
+*+ CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align)
+*+ CSS Forms
+*+ CSS Box Sizing
+*+ Gradients and Shadows
+*+ CSS Media Queries
+*+ CSS Flex-box
+*+ CSS Grid
+*+ Debugging Styling in the browser
+*+ CSS animation
+
+*+ inherit, unset, revert, revert-layer, initial

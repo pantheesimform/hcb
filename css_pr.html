@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PR</title>
+    <link rel="stylesheet" href="css_pr.css">
+</head>
+
+<body>
+    <h1>Attribute presence and value selectors</h1>
+    <ul>
+        <li>Item 1</li>
+        <li class="a">Item 2</li>
+        <li class="b a">Item 3</li>
+        <li class="ab">Item 4</li>
+        <li class="ab a-p">Item 5</li>
+    </ul>
+    <h1>Attribute substring matching selectors</h1>
+    <ul>
+        <li class="a">Item 1</li>
+        <li class="ab">Item 2</li>
+        <li class="bca">Item 3</li>
+        <li class="bcabc">Item 4</li>
+    </ul>
+    <div class="box">
+        <p>Text in .box</p>
+    </div>
+    <p>Text not in .box</p>
+    <p class="box">p having .box</p>
+
+</body>
+
+</html>
