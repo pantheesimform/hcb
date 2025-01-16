@@ -52,7 +52,8 @@ Percentage
 number (opacity)
 **color - name, hexadecimal(0-9, a-f, #xxxxxx), rgb(255,255,255/0.x) 0.x is alpha/opacity
 HWB(hue, whiteness, blackness), HSL(hue, saturation, lightness)
-**specifying generated content. the value is quoted to demonstrate that it is a string. "content property"
+**specifying generated content. the value is quoted to demonstrate that it is a string. "content property". can add url, emoji,...
+quotes property defines how to apply or override them
 ** math functions like calc(); min(), max(), clamp(); sin(), cos(), tan() -- rotating angle
 
 ** sizing in CSS
@@ -61,32 +62,138 @@ Percentage, min max, viewports
 ** styling background and border **
 background-color
 background-image -- background-repeat(repeat, no-repeat, repeat-x/y, space, round), background-size(cover, contain), background-position
-background-image(Gradients ?) -- 
 background-attachment (scroll, fixed, local) (how bg is scrolled when content is being scrolled)
 border: size style color, border-radius(rounded)
 
-** Text formatting and fonts **
-font style
-text layout style
+** Text formatting and fonts ** diff bet font and text - https://stackoverflow.com/questions/21075127/font-vs-text-in-css-property-names, https://codesweetly.com/text-vs-font/
+*font style*
+font stack(multiple font families)
+font-style(normal, italic, oblique)
+font-weight(light,normal,bold,extrabold,black,100-900,lighter/bolder - Sets current ele boldness to one step lighter/heavier than its parent ele boldness)
+text-transform(none,upppercase,lowercase,capitalize,full-width ? this is not working)
+text-decoration(none,underline,overline,line-through)(shorthand for text-decoration-line, text-decoration-style, and text-decoration-color)
+text-shadows(horizontal offset,vertical offset,blur radius,color)(can have multiple text shadows)
+font-variant(shorthand property allows you to set all the font variants for a font)
+font-stretch(font-width -- not supported yet)(selects a normal, condensed, or expanded face from a font)
+text-rendering?
+*text layout style*
+text-align(left,right,center,justify)
+line-height, word-spacing, letter-spacing
+text-indent(how much horizontal space should be left before the beginning of the first line of the text content)
+text-overflow(clip,ellipsis)(we have to make that text to be overflowed, for that have to use overflow:hidden, text-wrap:no-wrap)
+white-space(whitespace and associated line breaks inside the element are handled)
+word-break(whether line breaks appear wherever the text would otherwise overflow its content box)
+hyphens(how words should be hyphenated when text wraps across multiple lines)
+line-break(Relax or strengthen line breaking for Asian languages)
 
+** CSS Gradients and shadows**
+background-image: linear-gradient(to direction/angle,color1,color2,...),repeating-linear-gradient(),
+background-image: radial-gradient(shape size at position, color1, ...);
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...); repeating-conic-gradient();
+text-shadow: as previously mentioned (https://www.w3schools.com/css/css3_shadows.asp)
+box-shadow: https://www.w3schools.com/css/css3_shadows_box.asp
+
+** styling lists **
+list-style-type (number,letter,roman,...)
+list-style-position (inside/outside)
+list-style-image (url,...)
+** styling anchors/links **
+:link(blue)
+:visited(purple)
+:hover(hand icon)
+:focus(on press of tab key, shows border)
+:active(red, click event)
+to style change properties like color, cursor, outline
+
+** fonts insertion in CSS **
+1. font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+2. @font-face ruleset at the start of the CSS, which specifies the font file(s) to download.
+@font-face {
+  font-family: "myFont";
+  src: url("myFont.woff2") format(woff2), 2nd font;
+}
+
+** table styling **
+zebra striping -- tr:nth-child(odd/even/1/2/...){}
+
+** CSS Box Sizing **
+content-box(default) - width & height properties include the content only, but does not include the padding, border, margin
+border-box - width & height properties include the content, padding, and border, but don't include the margin
+
+** global attributes ** ?????
+initial -- sets the value defined by browser
+revert -- sets the value defined by browser
+inherit -- sets value from its parent
+unset -- will unset all styling and select what should be applied initial/inherit by element's actual property
+
+** Outline is a line outside of the element's border. outline takes space from margin.
+outline-offset CSS property sets the amount of space between an outline and the edge or border of an element.
+** overlay ?
+
+** position in css **
+static(default) -- follow the other elements in document flow
+relative -- same as static but allows to change top,left,right,bottom
+absolute -- completely remove ele from doc flow and acts like it doesnot exists. want to stick on screen. 
+    if parent is set to relative than it will be set on parent's top. set on same place.
+fixed -- same as absolute but does not see the parent's relative. so will stick on web page's top. moves with the page.
+sticky -- relative + fixed (be relative until it goes outside of page)
+
+** z-index doesn't work with staticly defined/non-defined elements, works with relative
+
+** due to flex-box usage of float and clear is very lowercase
+float left right, clear right left both
+
+** display
+inline -- in one line, prevents width, padding-top,margin-top
+inline-block -- to have all that is prevented by inline
+block --
+none -- to remove element
+grid, inline-grid, flex, inline-flex
+visibility: hidden -- just removes it visibelly
+
+** flex
+display: flex
+flex-direction: col/row/col-rev/row-rev
+
+** * container properties::::
+no justify-items in flexbox, align-items for one row, align-content for more than 1 row when we wrap content
+flex-flow is shorthand for flex-direction flex-wrap
+gap:row col
+* item property 
+order: num(1,2,...)
+flex-grow: num -- how many items space this item is going to take
+flex-shrink: num -- how many items space this item is going to take
+
+
+** grid
+grid-template-columns/rows: [name1]1stsize [name2]2ndsize...
+grid-row/column:from/to (num to num)(line1/line2)(name1/name2) orrrr grid-row-start/end:num;
+fr is just an unit specifically for columns, represents fraction of available width. repeat(x (times), y fr)
+
+
+
+15/1
 Introduction to CSS
 CSS Selectors
 Backgrounds and Borders
 CSS Margins and Padding
 Sizing and the Box Model
-*+ Text Formatting and Fonts
-*+ Styling anchors and lists
+Text Formatting and Fonts
+Styling anchors and lists 
 CSS Combinators
-*+ Pseudo-class and Pseudo-element
 CSS Attr Selectors
-
-*+ CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align)
-*+ CSS Forms
-*+ CSS Box Sizing
-*+ Gradients and Shadows
+Gradients and Shadows
+16/1
+*+ Pseudo-class and Pseudo-element
+CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align)
+CSS Forms
+CSS Box Sizing
 *+ CSS Media Queries
-*+ CSS Flex-box
-*+ CSS Grid
-*+ Debugging Styling in the browser
+CSS Flex-box
+CSS Grid
+Debugging Styling in the browser
 
-*+ box-sizing : inherit, unset, revert, revert-layer, initial
+pr on align and justify
+align and justify on self, content, item
+
+if we have client side validation in frontend, do we have to do server side also?

@@ -55,14 +55,76 @@ li[class$="a"] {
 .container {
     width: 80%;
     background-color: lightgray;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
+    /* Center the container */
     border: 1px solid black;
 }
 
 .box3 {
     width: 50%;
-    margin: 10% auto; /* Margin of 10% on top and bottom */
+    margin: 10% auto;
+    /* Margin of 10% on top and bottom */
     background-color: lightblue;
     padding: 20px;
     text-align: center;
+}
+
+.italic {
+    font-style: normal;
+    font-size: xx-large;
+    text-shadow:
+        1px 1px 1px red,
+        2px 2px 1px green;
+}
+
+.oblique {
+    font-style: oblique;
+    /* text-transform: full-width; */
+    background-color: pink;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box4 {
+    height: 400px;
+    width: 600px;
+    box-sizing: content-box;
+    padding: 10px;
+    border: 5px solid black;
+    outline: 10px solid blueviolet;
+    margin: 15px;
+}
+
+.box5 {
+    height: 20vh;
+    width: 20vh;
+    text-wrap: nowrap;
+    overflow: scroll;
+    text-overflow: clip;
+}
+
+.img1 {
+    float: left;
+    border: 2px solid black;
+    display: flow-root;
+    /* not working*/
+}
+
+.box6 {
+    border: 2px solid red;
+}
+
+/* .parent1 {
+    color: aquamarine;
+} */
+
+.ch1,
+.ch2,
+.ch3 {
+    height: 200px;
+    width: 500px;
+    /* display: block; */
+    border: 2px solid black;
+
 }
