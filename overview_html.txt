@@ -30,7 +30,7 @@ It defines the structure and content of web documents using tags and attributes 
 favicon --> file format - ICO(icon), PNG
 
 ** Tables and Lists **
-<th> used to give header in the cell of a table, col header whereas <thead> used to give the header of a group of a table, table header.
+<th> used to give header in the cell of a table, col header whereas <thead> used to give the header of a group of a table, table header. scope attr definies th is row/col scoped.
 <thead> grp of header rows. So you have more possibilities for scripting and formatting. authors give browsers the ability to include the header rows on each page of a printed, multi-page table, as well as the ability to present a long table with a scrolling body and static header rows
 <col>, <colgroup> useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
 <colgroup> tag specifies a group of one or more columns in a table for formatting.
