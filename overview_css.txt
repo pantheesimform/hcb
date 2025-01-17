@@ -190,9 +190,42 @@ tag{ --var_name:value; } tag2{ property:var(var_name) }
 ** specificity - applies css as higher the no.-17
 inline style, ids, class/attr/pseudo class, pseudo ele/type
 
+** pseudo classes-17
+* :is() have higher specificity than :where()
+* <div> before <!-- Rest of stuff inside the div --> after  </div>
+Pseudo-Classes -- for special state of ele
+:hover – Applies when the user hovers over an element.
+:focus – Applies when an element gains focus (e.g., input fields).
+:nth-child(n) – Matches an element that is the nth child of its parent.
+:nth-of-type(n) – Matches an element that is the nth of its type among its siblings.
+:first-child – Selects the first child of its parent.
+:last-child – Selects the last child of its parent.
+:only-child – Matches an element that is the only child of its parent.
+:checked – Applies to input elements that are checked (checkboxes, radios).
+:disabled – Selects disabled elements.
+:not(selector) – Matches elements that do not match the given selector.
+:visited – Applies to visited links.
+:active – Applies when an element is being activated (e.g., a button being clicked).
+:empty – Selects elements that have no children (including text nodes).
+:enabled – Selects enabled elements.
+:target – Matches an element with an ID matching the URL’s fragment.
+:root – Selects the document’s root element (usually <html>).
+Pseudo-Elements -- for specific part of ele
+::before – Inserts content before an element’s content.
+::after – Inserts content after an element’s content.
+::first-line – Styles the first line of a block of text.
+::first-letter – Styles the first letter of a block of text.
+::selection – Styles the portion of an element that is selected by a user.
+::placeholder – Styles the placeholder text of input fields.
+::backdrop – Styles the backdrop of a fullscreen element.
+::marker – Styles the marker of a list item.
+::file-selector-button – Styles the button of a file input element.
+
+** animation-17
 
 
-15/1
+
+
 Introduction to CSS
 CSS Selectors
 Backgrounds and Borders
@@ -203,24 +236,22 @@ Styling anchors and lists
 CSS Combinators
 CSS Attr Selectors
 Gradients and Shadows
-16/1
-*+ Pseudo-class and Pseudo-element
+Pseudo-class and Pseudo-element
 CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, inline-block, horizontal & vertical-align)
 CSS Forms
 CSS Box Sizing
-*+ CSS Media Queries
-*+ CSS animation
+CSS Media Queries
+CSS animation
 *+ advance CSS
 CSS Flex-box
 CSS Grid
 Debugging Styling in the browser
+
 *+ Revision of HTML
 *+ Revision of CSS
 *+ Interview questions of HTML & CSS
-*+ global css variables
+global css variables
 
-pr on align and justify
-align and justify on self, content, item
 
 ? if we have client side validation in frontend, do we have to do server side also
 ? diff between * and :root in CSS

@@ -168,3 +168,50 @@ li[class$="a"] {
     border: 2px solid black;
 
 }
+
+/* comment after pseudo class&ele */
+section {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+article {
+    display: inline-block;
+    width: 40%;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1em;
+    color: rgb(150 149 149);
+}
+
+h3 {
+    font-size: 0.9em;
+    color: darkgrey;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 0 1rem 0;
+}
+
+:is(h1, h2, h3):has(+ :is(h2, h3, h4)) {
+    color: aqua;
+}
+
+:is(h1, h2, h3):has(+ h2, + h3, + h4) {
+    color: greenyellow;
+}
+
+section::before{
+    content: "before";
+}
+section::after{
+    content: "after";
+}
