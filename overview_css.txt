@@ -170,6 +170,26 @@ grid-template-columns/rows: [name1]1stsize [name2]2ndsize...
 grid-row/column:from/to (num to num)(line1/line2)(name1/name2) orrrr grid-row-start/end:num;
 fr is just an unit specifically for columns, represents fraction of available width. repeat(x (times), y fr)
 
+** at rulesets-17
+@identifier (RULE)
+@charset "UTF-8" - used character set in doc
+@import - to include external stylesheet
+@layer - to create layers, in this rules the layer which is written at last is on th ehighest priority. rule for order of styles.
+@font-face - font resource locations, both local and external
+@keyframes - named animation by describing defining CSS styles
+@media - for responsivness
+@property - more expressive with the definition of a custom property with the ability to associate a type with the property, set default values, control inheritance.
+@scope - @scope (scope root) to (scope limit) { } - when we don't want to use complex combinators
+
+** global styling-17
+tag{ --var_name:value; } tag2{ property:var(var_name) }
+
+** @media-17
+@media screen,print and (orientation:landscape) and  (hover:hover) and  (min/min,width,height : or <= or >=) and (color){}
+
+** specificity - applies css as higher the no.-17
+inline style, ids, class/attr/pseudo class, pseudo ele/type
+
 
 
 15/1
@@ -189,11 +209,18 @@ CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, i
 CSS Forms
 CSS Box Sizing
 *+ CSS Media Queries
+*+ CSS animation
+*+ advance CSS
 CSS Flex-box
 CSS Grid
 Debugging Styling in the browser
+*+ Revision of HTML
+*+ Revision of CSS
+*+ Interview questions of HTML & CSS
+*+ global css variables
 
 pr on align and justify
 align and justify on self, content, item
 
-if we have client side validation in frontend, do we have to do server side also?
+? if we have client side validation in frontend, do we have to do server side also
+? diff between * and :root in CSS

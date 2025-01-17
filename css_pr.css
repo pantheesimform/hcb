@@ -2,6 +2,46 @@
     font-family: sans-serif;
 }
 
+:root {
+    --main-bg-color: brown;
+}
+
+@layer module, state;
+
+@layer state {
+    body {
+        background: pink;
+    }
+}
+
+@layer module {
+    body {
+        background: var(--main-bg-color);
+    }
+}
+
+@media screen and (min-width:720px) {
+    h1.sc720 {
+        color: aquamarine;
+        background-color: palevioletred;
+    }
+}
+
+@media screen and (width>420px) and (width<720px) {
+    h1.sc470 {
+        color: aquamarine;
+        background-color: palevioletred;
+    }
+}
+
+@media screen and (max-width:420px) {
+    h1.sc420 {
+        color: aquamarine;
+        background-color: palevioletred;
+    }
+}
+
+
 li[class] {
     font-size: 120%;
 }
