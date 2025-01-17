@@ -221,10 +221,20 @@ Pseudo-Elements -- for specific part of ele
 ::marker – Styles the marker of a list item.
 ::file-selector-button – Styles the button of a file input element.
 
-** animation-17
+** animation and transitions-17
+animation: animation-name, animation-duration, 
+            animation-timing-function, (linear, ease, ease-in, ease-out, ease-in-out, step-start, step-end, steps(n, start|end), cubic-bezier(n, n, n, n))
+            animation-delay, animation-iteration-count, animation-direction, 
+            animation-fill-mode, (none, forwards, backwards, both)
+            animation-play-state, (running, paused)
+            animation-timeline
+transition: transition-property(ele/things want to apply changes; all for including every ele), 
+            transition-duration,
+            transition-timing-function, (cubic-bezier(1, 0, 0, 1), ease, ease-in, ease-out, ease-in-out)
+            transition-delay;
 
-
-
+:root, * , html - precedence, to apply same properties to all
+? transition bg change, properties, animation and transition
 
 Introduction to CSS
 CSS Selectors
@@ -241,8 +251,7 @@ CSS Layout (display, max-width, max-hight, position, z-index, overflow, float, i
 CSS Forms
 CSS Box Sizing
 CSS Media Queries
-CSS animation
-*+ advance CSS
+CSS animation and transitions
 CSS Flex-box
 CSS Grid
 Debugging Styling in the browser
@@ -254,4 +263,3 @@ global css variables
 
 
 ? if we have client side validation in frontend, do we have to do server side also
-? diff between * and :root in CSS

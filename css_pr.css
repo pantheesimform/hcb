@@ -1,9 +1,15 @@
 * {
+    text-decoration: underline;
     font-family: sans-serif;
 }
 
 :root {
+    text-decoration: overline;
     --main-bg-color: brown;
+}
+
+html {
+    text-decoration: wavy;
 }
 
 @layer module, state;
@@ -209,9 +215,39 @@ h3 {
     color: greenyellow;
 }
 
-section::before{
+section::before {
     content: "before";
 }
-section::after{
+
+section::after {
     content: "after";
+}
+
+@keyframes example {
+    from {
+        background-color: black;
+    }
+
+    to {
+        background-color: wheat;
+    }
+}
+
+.box8 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: example 4s linear 0.5s infinite alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+    animation-timeline: 20sec;
+}
+
+/* animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, animation-play-state, animation-timeline */
+.box9 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.5s 5s linear;
+    transition-timing-function: ease-in-out;
 }
