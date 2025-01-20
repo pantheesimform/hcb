@@ -8,19 +8,121 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="bootstrap-5.2.3/dist/css/bootstrap.min.css">
-    <style>
-
-    </style>
-    <script>
-
-    </script>
+    <link rel="stylesheet" href="bs_pr.css">
 </head>
 
 <body>
-    <h1 class="text-danger">Hello, world!</h1>
+    <!-- <h1 class="text-danger">Hello, world!</h1> -->
+
+    <p class="text-center text-sm-end text-md-start text-lg-center text-xl-end text-xxl-start " id="hackerrank">for
+        breakpoints</p>
+    <p class="container-sm container-xl">for container</p>
+    <!-- for md it is container else fluid -->
+    <p class="container-fluid container-md">for container-fluid</p>
+
+    <div class="row row-cols-sm-3 row-cols-md-2 row-cols-lg-1 g-0 gx-xs-4 gy-sm-5">
+        <div class="col">Column 1</div>
+        <div class="col">Column 2</div>
+        <div class="col">Column 3</div>
+    </div>
+
+    <picture>
+        <img height="50" width="150" src="assets/html_logo.png" alt="flipkart logo" class="img-thumbnail">
+        <!-- ? why this is not showing source file -->
+        <source height="50" width="150" media="(min-width: 480px)" srcset="assets/flipkart.png" class="img-thumbnail"
+            type="image/png">
+    </picture>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-borderless table-primary align-middle">
+            <thead class="table-light">
+                <caption>
+                    Table Name
+                </caption>
+                <tr>
+                    <th scope="col">Column 1</th>
+                    <th scope="col">Column 2</th>
+                    <th scope="col">Column 3</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                <tr class="table-primary">
+                    <td scope="row">Item head</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr class="table-primary">
+                    <td scope="row">Item head</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
 
 
+    <figure>
+        <img src="assets/flipkart.png" alt="flipkart logo" height="150" width="150">
+        <figcaption>this is logo of flipkart</figcaption>
+    </figure>
 
+    <form>
+        <div class="mb-3">
+            <label for="uname" class="form-label">Username: </label>
+            <input type="text" name="usename" id="uname" class="form-control-lg" />
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password: </label>
+            <input type="password" name="pass" id="password" class="form-control" aria-describedby="passHelp" />
+            <span id="passHelp" class="form-text">Pass must be 8-20 char.</span>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address: </label>
+            <textarea name="add" id="address" cols="30" rows="10" class="form-control-sm" value="Readonly input here..."
+                aria-label="readonly input example" readonly>Pre defined values</textarea>
+        </div>
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple accept=".png,.txt">
+        </div>
+        <select class="form-select form-select-lg mb-3" aria-label="Large select example" multiple size="2">
+            <option selected>dropdown with multiple selection</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+        </select>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate">
+            <label class="form-check-label" for="flexCheckIndeterminate">
+                Indeterminate checkbox
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radiobtn" id="radio1">
+            <label class="form-check-label" for="radio1">
+                radio1
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="radiobtn" id="radio2">
+            <label class="form-check-label" for="radio2">
+                radio2
+            </label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+        </div>
+        <label for="customRange1" class="form-label">Example range</label>
+        <input type="range" class="form-range" id="customRange1">
+        <div class="mb-3">
+            <label for="signin">signin</label>
+            <input type="text" name="signin" id="signin" class="form-signin"> <!-- ?? use of signin class -->
+        </div>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

@@ -1,0 +1,7 @@
+/* $theme-colors: map-remove($theme-colors, "info", "light", "dark"); */
+:root{
+    color: aqua;
+}
+#hackerrank{
+    color: pink !important;
+}

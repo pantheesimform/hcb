@@ -4,3 +4,43 @@ Popper - don’t plan to use dropdowns, popovers, or tooltips, save some kilobyt
 bs changes border-box from content-box for not effecting content bcz of padding
 If we require Internet Explorer support, please use Bootstrap v4
 bs js is not supported in other js frameworks like react(react-bs) vue(bsvue) angular(ng-bs) so use framework specific version
+
+** breakpoints 
+Extra small(nothing to mention) <576px, sm ≥576px, md ≥768px, lg ≥992px, xl ≥1200px, xxl ≥1400px
+
+** .container sets max-width at each breakpoint while .container-fluid does not
+
+** grid 
+Use responsive .row-cols-* to quickly set the number of columns that best render your content and layout. 
+    Whereas normal .col-* apply to the individual columns (e.g., .col-md-4), the row columns are set on the parent .row as a shortcut. 
+    With .row-cols-auto you can give the columns their natural width.
+Gutter are horizontal padding of 1.5rem(24px) :- g/gx/gy-md/sm/xxl/xs/xl/none-number
+
+** zIndex - z-n1, z-0/1/2/3
+
+** normal classes supported by Bootstrap
+h1 to h6 and display-1 to display-6
+lead, mark, small
+blockquote, blockquote-footer
+
+img-fluid/thumbnail
+
+table-{color}, table-striped(rows)/table-striped-columns, table-hover, table-bordered/borderless
+table-active(to highlight active rows), table-sm(to male table small), table-group-divider(used in tbody to diff bet head and content)
+table-responsive(allows table to scroll when needed)
+
+figure, figure-img, figure-caption
+
+form-label, form-control-lg/sm/blank, form-text/floating/range/signin/switch
+if used col-auto for each label and inputs then use col-form-label
+form-control-plaintext/color/lg/sm/dark/blank
+form-check-blank/input/inline/input-placeholder/label/reverse and form-checked-content (for checkbox and radio both)
+form-select-blank/lg/sm
+input-group for grouping label and input, input-group-text
+
+
+
+
+
+
+aria-labeledby / describedby ??
