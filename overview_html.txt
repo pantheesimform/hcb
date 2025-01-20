@@ -1,7 +1,7 @@
 HTML code was never actually compiled or interpreted.
 https://www.w3schools.com/html/html_urlencode.asp
 
-** What is HTML? **
+** What is HTML **
 html(hyper text markup language) is used to create and structure web pages.
 It defines the structure and content of web documents using tags and attributes to build and format interactive elements.
 
@@ -103,25 +103,28 @@ Non-Semantic Tags <div>, <span>, <b>, <i>, <u>, <abbr>, <acronym>, <big>, <cente
 <nobr>(dep)- to have all para in one line 
 <noembed> or <noframes>(both dep)- to show content when browser does not support res tags.
 <noscript>- section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
-<object>- external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. <param>(dep) ?
+<object>- external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin. <param>(dep)
 <picture>- 0/0+ <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios. grouping
 <plaintext> is dep of <pre>- preformatted text which is to be presented exactly as written in the HTML file
-<portal> ?
+<portal>- Enables seamless navigation between pages with a more integrated user experience.
 <q>- enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks.
         This element is intended for short quotations that don't require paragraph breaks; for long <blockquote>
-<rp> <rt> <ruby> ?
+<rp>- Provides fallback content for browsers that don't support ruby annotations.
+<rt>- Specifies the pronunciation or explanation of characters in a <ruby> element.
+<ruby>- Displays small annotations above or below text, often used for East Asian typography.
 <samp>- sample/quoted output from a computer program. Its contents are typically rendered using the browser's default monospaced font (Courier/Lucida Console).
-<search> ?
-<slot> ?
-<template>- mechanism for holding HTML fragments, which can either be used later via JavaScript or generated immediately into shadow DOM ?
-<track>- child of the media elements, <audio> and <video>. Each track element lets you specify a timed text track (or time-based data) that can be displayed in parallel with the media element, for example to overlay subtitles or closed captions on top of a video or alongside audio tracks. ?
-<wbr> ?
-data-* attri?
+<search>-Represents a search form; currently an experimental feature.
+<slot>
+<template>- mechanism for holding HTML fragments, which can either be used later via JavaScript or generated immediately into shadow DOM
+<track>- child of the media elements, <audio> and <video>. Each track element lets you specify a timed text track (or time-based data) that can be displayed in parallel with the media element, for example to overlay subtitles or closed captions on top of a video or alongside audio tracks.
+            Provides text tracks for <video> and <audio> elements, such as subtitles or captions.
+<wbr>- Suggests a possible line-break opportunity within text.
+data-* attri - Custom data attributes used to store extra information on HTML elements, accessible via JavaScript.
 
 
-details and summary like accordian
-dd, dt, dl are like definition/description
-datalist like giving suggestions in search box
+** details and summary like accordian
+** dd, dt, dl are like definition/description
+** datalist like giving suggestions in search box
 
 1. abbr(underline) and acronym(depricated)(underline) and dfn(italic) -- for tooltip
 2. code, kbd, samp, var
@@ -129,3 +132,8 @@ datalist like giving suggestions in search box
 4. meter tag high low min max optimum
 5. meter and progress
 6. section and div
+
+<code>: Represents a fragment of code.
+<kbd>: Denotes keyboard input.
+<samp>: Represents sample output from a computer program.
+<var>: Represents a variable in a mathematical expression or programming context.

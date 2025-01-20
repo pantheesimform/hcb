@@ -39,7 +39,7 @@ to apply globally--> p * selects all the nested elements inside the <p> element,
 4. Subsequent-sibling combinator -- tag1 ~ tag2 (all p that are coming after h1)
 
 ** CSS box-Model
-content, padding, border, margin -- what is outline ?
+content, padding, border, margin ; outline
 
 ** CSS value and units **
 absolute units - cm,mm,q,in,pc,pt,px
@@ -70,7 +70,7 @@ border: size style color, border-radius(rounded)
 font stack(multiple font families)
 font-style(normal, italic, oblique)
 font-weight(light,normal,bold,extrabold,black,100-900,lighter/bolder - Sets current ele boldness to one step lighter/heavier than its parent ele boldness)
-text-transform(none,upppercase,lowercase,capitalize,full-width ? this is not working)
+text-transform(none,upppercase,lowercase,capitalize,full-width)
 text-decoration(none,underline,overline,line-through)(shorthand for text-decoration-line, text-decoration-style, and text-decoration-color)
 text-shadows(horizontal offset,vertical offset,blur radius,color)(can have multiple text shadows)
 font-variant(shorthand property allows you to set all the font variants for a font)
@@ -120,7 +120,7 @@ zebra striping -- tr:nth-child(odd/even/1/2/...){}
 content-box(default) - width & height properties include the content only, but does not include the padding, border, margin
 border-box - width & height properties include the content, padding, and border, but don't include the margin
 
-** global attributes ** ?????
+** global attributes ** 
 initial -- sets the value defined by browser
 revert -- sets the value defined by browser
 inherit -- sets value from its parent
@@ -144,12 +144,12 @@ sticky -- relative + fixed (be relative until it goes outside of page)
 float left right, clear right left both
 
 ** display
-inline -- in one line, prevents width, padding-top,margin-top
+inline -- in one line, prevents width, padding-top, margin-top
 inline-block -- to have all that is prevented by inline
 block --
 none -- to remove element
 grid, inline-grid, flex, inline-flex
-visibility: hidden -- just removes it visibelly
+visibility: hidden -- just removes it visibally
 
 ** flex
 display: flex
@@ -170,7 +170,7 @@ grid-template-columns/rows: [name1]1stsize [name2]2ndsize...
 grid-row/column:from/to (num to num)(line1/line2)(name1/name2) orrrr grid-row-start/end:num;
 fr is just an unit specifically for columns, represents fraction of available width. repeat(x (times), y fr)
 
-** at rulesets-17
+** at rulesets
 @identifier (RULE)
 @charset "UTF-8" - used character set in doc
 @import - to include external stylesheet
@@ -181,16 +181,16 @@ fr is just an unit specifically for columns, represents fraction of available wi
 @property - more expressive with the definition of a custom property with the ability to associate a type with the property, set default values, control inheritance.
 @scope - @scope (scope root) to (scope limit) { } - when we don't want to use complex combinators
 
-** global styling-17
+** global styling
 tag{ --var_name:value; } tag2{ property:var(var_name) }
 
-** @media-17
+** @media
 @media screen,print and (orientation:landscape) and  (hover:hover) and  (min/min,width,height : or <= or >=) and (color){}
 
-** specificity - applies css as higher the no.-17
+** specificity - applies css as higher the no.
 inline style, ids, class/attr/pseudo class, pseudo ele/type
 
-** pseudo classes-17
+** pseudo classes
 * :is() have higher specificity than :where()
 * <div> before <!-- Rest of stuff inside the div --> after  </div>
 Pseudo-Classes -- for special state of ele
@@ -221,7 +221,7 @@ Pseudo-Elements -- for specific part of ele
 ::marker – Styles the marker of a list item.
 ::file-selector-button – Styles the button of a file input element.
 
-** animation and transitions-17
+** animation and transitions
 animation: animation-name, animation-duration, 
             animation-timing-function, (linear, ease, ease-in, ease-out, ease-in-out, step-start, step-end, steps(n, start|end), cubic-bezier(n, n, n, n))
             animation-delay, animation-iteration-count, animation-direction, 
@@ -234,7 +234,6 @@ transition: transition-property(ele/things want to apply changes; all for includ
             transition-delay;
 
 :root, * , html - precedence, to apply same properties to all
-? transition bg change, properties, animation and transition
 
 Introduction to CSS
 CSS Selectors

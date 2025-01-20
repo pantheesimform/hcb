@@ -26,6 +26,11 @@ html {
     }
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+
 @media screen and (min-width:720px) {
     h1.sc720 {
         color: aquamarine;
