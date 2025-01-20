@@ -1,0 +1,6 @@
+bootstrap - frontend toolkit
+
+Popper - don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including it.
+bs changes border-box from content-box for not effecting content bcz of padding
+If we require Internet Explorer support, please use Bootstrap v4
+bs js is not supported in other js frameworks like react(react-bs) vue(bsvue) angular(ng-bs) so use framework specific version
