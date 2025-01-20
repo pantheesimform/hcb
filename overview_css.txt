@@ -255,9 +255,9 @@ CSS Flex-box
 CSS Grid
 Debugging Styling in the browser
 
-*+ Revision of HTML
-*+ Revision of CSS
-*+ Interview questions of HTML & CSS
+Revision of HTML
+Revision of CSS
+Interview questions of HTML & CSS
 global css variables
 
 
