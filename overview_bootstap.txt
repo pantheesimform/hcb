@@ -4,6 +4,7 @@ Popper - don’t plan to use dropdowns, popovers, or tooltips, save some kilobyt
 bs changes border-box from content-box for not effecting content bcz of padding
 If we require Internet Explorer support, please use Bootstrap v4
 bs js is not supported in other js frameworks like react(react-bs) vue(bsvue) angular(ng-bs) so use framework specific version
+bootstrap.min.css has been minified. This means all the whitespace and other extra characters have been removed. This is commonly done for use in production, to reduce the size of the file. When developing, it is usually helpful to use the unminified version, since, as you said, it is readable.
 
 ** breakpoints 
 Extra small(nothing to mention) <576px, sm ≥576px, md ≥768px, lg ≥992px, xl ≥1200px, xxl ≥1400px
@@ -23,7 +24,7 @@ h1 to h6 and display-1 to display-6
 lead, mark, small
 blockquote, blockquote-footer
 
-img-fluid/thumbnail
+no no no img-fluid/thumbnail - baki
 
 table-{color}, table-striped(rows)/table-striped-columns, table-hover, table-bordered/borderless
 table-active(to highlight active rows), table-sm(to male table small), table-group-divider(used in tbody to diff bet head and content)
@@ -37,8 +38,12 @@ form-control-plaintext/color/lg/sm/dark/blank
 form-check-blank/input/inline/input-placeholder/label/reverse and form-checked-content (for checkbox and radio both)
 form-select-blank/lg/sm
 input-group for grouping label and input, input-group-text
-
-
+for floating label, just make outer div containing input and label and give it class of "form-floating"
+form layout is nothing but just having good format of form, which cna be vertical/horizontal
+form-validation -bootstrap ?? https://getbootstrap.com/docs/5.3/forms/validation/ , do yt video
+valid/invalid-tooltip/feedback - in div tag add content for it.
+has-validation?
+is-valid, is-invalid?
 
 
 

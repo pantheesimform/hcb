@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <!-- <h1 class="text-danger">Hello, world!</h1> -->
+    <h1 class="text-sm-center text-lg-start text-xxl-end">Hello, world!</h1>
 
     <p class="text-center text-sm-end text-md-start text-lg-center text-xl-end text-xxl-start " id="hackerrank">for
         breakpoints</p>
@@ -69,58 +69,89 @@
         <figcaption>this is logo of flipkart</figcaption>
     </figure>
 
-    <form>
-        <div class="mb-3">
-            <label for="uname" class="form-label">Username: </label>
-            <input type="text" name="usename" id="uname" class="form-control-lg" />
+    <!-- example of form layout -->
+    <form class="container-fluid">
+        <div class="row">
+            <div class="col-4 mb-3">
+                <label for="uname" class="form-label">Username: </label>
+                <input type="text" name="usename" id="uname" class="form-control-lg" />
+            </div>
+            <div class="col-4 mb-3">
+                <label for="password" class="form-label">Password: </label>
+                <input type="password" name="pass" id="password" class="form-control" aria-describedby="passHelp" />
+                <span id="passHelp" class="form-text">Pass must be 8-20 char.</span>
+            </div>
+            <div class="col-4 mb-3">
+                <label for="address" class="form-label">Address: </label>
+                <textarea name="add" id="address" cols="30" rows="3" class="form-control-sm"
+                    value="Readonly input here..." aria-label="readonly input example"
+                    readonly>Pre defined values</textarea>
+            </div>
+            <div class="col-6 mb-3">
+                <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple accept=".png,.txt">
+            </div>
+            <div class="col-6 mb-3">
+                <select class="form-select form-select-lg" aria-label="Large select example" multiple size="2">
+                    <option selected>dropdown with multiple selection</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                        Indeterminate checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radiobtn" id="radio1">
+                    <label class="form-check-label" for="radio1">
+                        radio1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radiobtn" id="radio2">
+                    <label class="form-check-label" for="radio2">
+                        radio2
+                    </label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                </div>
+                <label for="customRange1" class="form-label">Example range</label>
+                <input type="range" class="form-range" id="customRange1">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password: </label>
-            <input type="password" name="pass" id="password" class="form-control" aria-describedby="passHelp" />
-            <span id="passHelp" class="form-text">Pass must be 8-20 char.</span>
-        </div>
-        <div class="mb-3">
-            <label for="address" class="form-label">Address: </label>
-            <textarea name="add" id="address" cols="30" rows="10" class="form-control-sm" value="Readonly input here..."
-                aria-label="readonly input example" readonly>Pre defined values</textarea>
-        </div>
-        <div class="mb-3">
-            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
-            <input class="form-control" type="file" id="formFileMultiple" multiple accept=".png,.txt">
-        </div>
-        <select class="form-select form-select-lg mb-3" aria-label="Large select example" multiple size="2">
-            <option selected>dropdown with multiple selection</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-        </select>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate">
-            <label class="form-check-label" for="flexCheckIndeterminate">
-                Indeterminate checkbox
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="radiobtn" id="radio1">
-            <label class="form-check-label" for="radio1">
-                radio1
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="radiobtn" id="radio2">
-            <label class="form-check-label" for="radio2">
-                radio2
-            </label>
-        </div>
-        <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
-        </div>
-        <label for="customRange1" class="form-label">Example range</label>
-        <input type="range" class="form-range" id="customRange1">
         <div class="mb-3">
             <label for="signin">signin</label>
             <input type="text" name="signin" id="signin" class="form-signin"> <!-- ?? use of signin class -->
+        </div>
+    </form>
+
+    <form class="container-fluid">
+        <div class="h6 text-center">horizontal form</div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">@</span>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+                <label for="floatingInputGroup1">Username</label>
+            </div>
         </div>
     </form>
 
